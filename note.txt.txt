@@ -1,4 +1,4 @@
-MOT: consiste a decouper les opérations n procédures fonctionnelles, en une succession de traitements déclenchée par un événement.
+MOT: consiste a decouper les opérations en procédures fonctionnelles, en une succession de traitements déclenchée par un événement.
 
 MCD: schéma représentant la structure du systéme du point de vue des données (relation et dépendance)
 
