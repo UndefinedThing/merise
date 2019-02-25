@@ -6,4 +6,4 @@ MPD: structure finale de la base de données. entitée en table, prop en champ,ide
 
 MLD: création depuis le MPD , formation de table comme en SQL
 
-
+analyse systemique : analyse effectuer en fct des echanges entre objet (etre vivant ou non).
