@@ -1,0 +1,78 @@
+Client (Code_client, Nom_Client, Prenom_Client, E-Mail_Client, Adresse_Client, Ville_Client_Client, Code_Postal_Client_Client, Num_Client_Client, Historique_Adresses_client_Client, Historique_Achat_Client_Client) 
+ 
+Article (ID_Article_Article, Titre_Article, Desc_Article, Prix_UHT_Article, Photos_Article, Taux_Réduc_Gros_Client_Article, Dimensions_Article, Masse_Article, Nmbr_Stock_Article, Délai_Réap_Article, TVA_Article, Article_Historique, Lot_Article)
+
+Mode_de_paiement (Id_paiement_Mode_de_livraison, Paiement_Cheque_Mode_de_paiement, Paiement_CB_Mode_de_paiement, prestataire_de_paiement_code_paiement_paiement_par_cb)  Mode_de_livraison (Id_Livraison_Mode_de_livraison, Modes_de_livraison, Livraison_Boutique_Mode_de_livraison, Id_Service_Achats_Service_achats)
+
+Utilisateur_non_identifié (ID_Guest_Utilisateur_non_identifié)  Comptabilité (Id_Comptabilité_Comptabilité)
+
+Prestataire_de_paiement (Code_Paiement_Paiement_par_CB, mode_de_paiement_id_paiement_mode_de_livraison, #Id_Comptabilité_Comptabilité)
+
+Service_achats (Id_Service_Achats_Service_achats)
+
+Detail_commande (ID_Commande_Detail_commande, ID_Article_Detail_commande, Titre_Article_Detail_commande, Prix_UHT_Article_Detail_commande, Taux_Réduc_Gros_Client_Detail_commande, Dimensions_Article_Detail_commande, Masse_Article_Detail_commande, Stock_Article_Detail_commande, TVA_Article_Detail_commande, Lot_Article_Detail_commande, Code_Client_Detail_commande, Nom_Client_Detail_commande, E-Mail_Client_Detail_commande, Prénom_Client_Detail_commande, Adresse_Client_Detail_commande, Ville_Client_Detail_commande, Code_Postal_Client_Detail_commande, Num_Client_Detail_commande, Mode_de_livraison_Detail_commande)
+
+Boutiques (ID_Boutiques_Boutiques)
+
+Entrepôts (ID_Entrepots_Entrepôts)
+
+Stock (ID_Stock, Id_Article_Stock, Stock_Produits, #ID_Entrepots_Entrepôts)
+
+Camion (ID_Camion_Camion, ID_Livreur_Camion, #ID_Boutiques_Boutiques)
+
+Facturation (Id_Facturation_Facturation)
+
+Fournisseur (Id_Fournisseur_Fournisseur, Note_Fournisseur)
+
+Commentaire (Id_Commentaire, Commentaire_Commentaire, Validation_Modo)
+
+Note (Id_Note_Note, Note_Note)
+
+Département_Commercial (ID_Département, ID_Employés)
+
+Commande (Code_client, ID_Article_Article, Id_Livraison_Mode_de_livraison, Id_paiement_Mode_de_livraison, Id_Service_Achats_Service_achats)
+
+S'identifie_en_tant_que_client_éxistant (ID_Guest_Utilisateur_non_identifié, Code_client)
+
+Saisie_ses_coordonnées (ID_Guest_Utilisateur_non_identifié, Code_client)
+
+Paiement_par_chèque (Id_paiement_Mode_de_livraison, Id_Comptabilité_Comptabilité, Id_chèque_Paiement_par_chèque, date_cheque_Paiement_par_chèque)
+
+Confirme_Paiement (Id_Comptabilité_Comptabilité, Id_Service_Achats_Service_achats)
+
+Confirme_création_commande (Id_Service_Achats_Service_achats, ID_Commande_Detail_commande)
+
+Demande_de_préparation (Id_Service_Achats_Service_achats, ID_Entrepots_Entrepôts)
+
+Réçois (ID_Commande_Detail_commande, ID_Entrepots_Entrepôts)
+
+Produits_stockés (ID_Stock, ID_Entrepots_Entrepôts)
+
+Produits_non_stockés (ID_Stock, ID_Entrepots_Entrepôts)
+
+Informe (ID_Entrepots_Entrepôts, Id_Service_Achats_Service_achats, Absence_de_stock_Informe, Délai_réap_Informe, Commande_quitte_entrepot_Informe)
+
+Envoie_un_mail (Id_Service_Achats_Service_achats, Code_client, Id_Facturation_Facturation)
+
+Stock_pendant_1_jour (ID_Entrepots_Entrepôts, ID_Camion_Camion)  Expédie_ (ID_Entrepots_Entrepôts, Code_client)
+
+Retire_commande (Code_client, ID_Boutiques_Boutiques)
+
+Informe_ (Id_Service_Achats_Service_achats, Id_Facturation_Facturation, Commande_expedier_Informe_, Mode_De_Paiement_Informe_)
+
+Demande_de_paiement (ID_Entrepots_Entrepôts, Id_Comptabilité_Comptabilité)
+
+Régle (Id_Comptabilité_Comptabilité, Id_Fournisseur_Fournisseur) 
+
+Laisse (Code_client, Id_Commentaire) 
+
+Possède (Id_Commentaire, ID_Commande_Detail_commande)
+
+Donne (Code_client, Id_Note_Note) 
+
+Modère (ID_Département, Id_Commentaire)
+
+
+
+
+
