@@ -1,0 +1,9 @@
+MOT: consiste a decouper les opérations en procédures fonctionnelles, en une succession de traitements déclenchée par un événement.
+
+MCD: schéma représentant la structure du systéme du point de vue des données (relation et dépendance)
+
+MPD: structure finale de la base de données. entitée en table, prop en champ,identifients en clé primaire,clé etrangere etc.....
+
+MLD: création depuis le MPD , formation de table comme en SQL
+
+analyse systemique : analyse effectuer en fct des echanges entre objet (etre vivant ou non).
